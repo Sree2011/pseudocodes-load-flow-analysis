@@ -1,2 +1,4 @@
 # pseudocodes-load-flow-analysis
-different steps in load flow analysis have different pseudocodes
+
+- Formation of bus admittance matrix - [bus-admittance-matrix.md](./bus-admittance-matrix.md)
+- Line flows and losses - [line-flows-and-losses.md](./line-flows-and-losses.md)
