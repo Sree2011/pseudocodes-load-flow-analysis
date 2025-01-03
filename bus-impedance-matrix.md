@@ -43,7 +43,7 @@ FUNCTION calculate_matrix(y, n)
 END FUNCTION
 </pre>
 <pre>
-<h2><b>CALCULATE THE INVERSE OF THE BUS ADMITTANCE MATRIX</b></h2>
+<h2><b>CALCULATE THE BUS IMPEDANCE MATRIX</b></h2>
 FUNCTION calculate_zbus(ybus)
     Det = DETERMINANT(ybus)
     IF Det == 0
