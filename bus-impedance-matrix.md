@@ -50,10 +50,12 @@ FUNCTION calculate_zbus(ybus)
         DISPLAY "Matrix is singular"
     ELSE
         DISPLAY "Bus Impedance matrix:"
-        Inv = INVERSE(ybus) // this method is defined in [Matrix functions](./matrix-functions.md) for the java version
+        Inv = INVERSE(ybus)
         FOR i in Inv
             DISPLAY i
         END FOR
     END IF
 END FUNCTION
 </pre>
+
+> INVERSE(ybus) method is defined in [Matrix functions](./matrix-functions.md) for the java version
