@@ -1,7 +1,21 @@
 [Home](./README.md)
 
 # Bus Impedance Matrix
+<pre>
+<h2><b>MAIN PROGRAM </b></h2>
+FUNCTION main()
+    DISPLAY "Enter the no.of buses:"
+    INPUT n
+    DISPLAY "Enter 1 for impedance and 2 for admittance"
+    INPUT choice
 
+    CALL get_input(choice,n) AND STORE THE RESULT INTO y
+    CALL calculate_matrix(y,n) AND STORE THE RESULT INTO Ybus
+    CALL calculate_zbus(Ybus,n) AND STORE THE RESULT INTO Zbus
+    CALL display_matrix(Zbus,n)
+    
+END FUNCTION
+</pre>
 <pre>
 <h2>GET INPUT FROM THE USER</h2>
 FUNCTION get_input(choice, n)
