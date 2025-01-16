@@ -2,10 +2,9 @@
 
 # Matrix_Functions
 
-Functions for matrix operations involving complex numbers
 
 <pre>
-    // Function to get the cofactor matrix
+    <h2><b>CALCULATE COFACTOR MATRIX OF A MATRIX</b></h2>
     Function getCofactor(A, temp, p, q, n) 
         Initialize i = 0, j = 0
         
@@ -22,8 +21,10 @@ Functions for matrix operations involving complex numbers
             END FOR
         END FOR
     END FUNCTION
+</pre>
 
-    // Function to find determinant of a matrix
+<pre>
+    <h2><b>CALCULATE DETERMINANT OF A MATRIX</b></h2>
     Function determinant(A, n) 
         Initialize D as Complex(0, 0)
         
@@ -42,8 +43,10 @@ Functions for matrix operations involving complex numbers
         
         Return D
     END FUNCTION
+</pre>
 
-    // Function to find adjoint of a matrix
+<pre>
+    <h2><b>CALCULATE ADJOINT OF A MATRIX</b></h2>
     Function adjoint(A, adj) 
         Initialize N as length of A
         
@@ -64,8 +67,10 @@ Functions for matrix operations involving complex numbers
         END FOR
 
     END FUNCTION
+</pre>
 
-    // Function to find inverse of a matrix
+<pre>
+    <h2><b>CALCULATE INVERSE OF A MATRIX</b></h2>
     Function inverse(A) 
         Initialize N as length of A
         Initialize det as determinant(A, N)
