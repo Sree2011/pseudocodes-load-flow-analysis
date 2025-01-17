@@ -59,16 +59,15 @@ END FUNCTION
 <pre>
 <h2><b>CALCULATE THE BUS IMPEDANCE MATRIX</b></h2>
 FUNCTION calculate_zbus(ybus)
+    INITIALISE Inv matrix with zeros
     Det = DETERMINANT(ybus)
     IF Det == 0
         DISPLAY "Matrix is singular"
     ELSE
         DISPLAY "Bus Impedance matrix:"
         Inv = INVERSE(ybus)
-        FOR i in Inv
-            DISPLAY i
-        END FOR
     END IF
+    RETURN Inv
 END FUNCTION
 </pre>
 
